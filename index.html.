@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Запись на Наращивание Ресниц</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        label {
+            font-size: 16px;
+            margin-bottom: 10px;
+            display: block;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0 20px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Запись на Наращивание Ресниц</h1>
+    <form id="booking-form" action="https://wa.me/7903003817" method="get" target="_blank">
+        <label for="name">Фамилия и имя</label>
+        <input type="text" id="name" name="name" required placeholder="Введите ваше имя">
+
+        <label for="phone">Номер телефона (с привязкой к WhatsApp)</label>
+        <input type="tel" id="phone" name="phone" required placeholder="Введите ваш номер телефона">
+
+        <label for="date">Дата записи</label>
+        <select id="date" name="date" required>
+            <option value="2024-12-01">1 декабря 2024</option>
+            <option value="2024-12-02">2 декабря 2024</option>
+            <option value="2024-12-03">3 декабря 2024</option>
+            <option value="2024-12-04">4 декабря 2024</option>
+            <!-- Добавьте другие даты от 1 до 30 декабря -->
+        </select>
+
+        <label for="time">Время записи</label>
+        <select id="time" name="time" required>
+            <option value="10:00">10:00</option>
+            <option value="13:00">13:00</option>
+            <option value="16:00">16:00</option>
+            <option value="19:00">19:00</option>
+        </select>
+
+        <label for="comments">Комментарии и пожелания</label>
+        <textarea id="comments" name="comments" rows="4" placeholder="Напишите ваши пожелания"></textarea>
+
+        <button type="submit">Записаться</button>
+    </form>
+</div>
+
+</body>
+</html>
